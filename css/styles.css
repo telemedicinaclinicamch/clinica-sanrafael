@@ -372,7 +372,7 @@ h3 {
   min-height: 218px;
   padding: 22px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--mch-line);
+  border: 1px solid  #e7e1eb;
   background:
     radial-gradient(circle at top right, rgba(180, 134, 188, 0.25), transparent 40%),
     linear-gradient(180deg, var(--white), var(--mch-soft-2));
@@ -823,4 +823,48 @@ td:first-child {
   .kpi-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* CORRECCIÓN FINAL KPI - SEMAFORIZACIÓN LIMPIA */
+
+.kpi-card{
+  border:1px solid #e7e1eb !important;
+  background:#ffffff !important;
+  padding:28px !important;
+}
+
+.kpi-card::before{
+  height:5px !important;
+  width:100% !important;
+  inset:0 0 auto 0 !important;
+  background:#8f2f93 !important;
+}
+
+.kpi-card.accent-neutral::before{background:#8f2f93 !important;}
+.kpi-card.accent-success::before{background:#2e9d63 !important;}
+.kpi-card.accent-observation::before{background:#d4a017 !important;}
+.kpi-card.accent-danger::before{background:#c94747 !important;}
+
+.kpi-card.accent-neutral .kpi-value,
+.kpi-card.accent-neutral .icon-circle{color:#8f2f93 !important;}
+
+.kpi-card.accent-success .kpi-value,
+.kpi-card.accent-success .icon-circle{color:#2e9d63 !important;}
+
+.kpi-card.accent-observation .kpi-value,
+.kpi-card.accent-observation .icon-circle{color:#b67800 !important;}
+
+.kpi-card.accent-danger .kpi-value,
+.kpi-card.accent-danger .icon-circle{color:#c94747 !important;}
+
+.kpi-card.accent-success{
+  border-color:rgba(46,157,99,.25) !important;
+}
+
+.kpi-card.accent-observation{
+  border-color:rgba(212,160,23,.28) !important;
+}
+
+.kpi-card.accent-danger{
+  border-color:rgba(201,71,71,.28) !important;
 }
