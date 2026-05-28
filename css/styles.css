@@ -868,3 +868,102 @@ td:first-child {
 .kpi-card.accent-danger{
   border-color:rgba(201,71,71,.28) !important;
 }
+/* RESPONSIVE HEADER / HERO - CELULAR */
+
+@media (max-width: 768px){
+
+  .page-shell{
+    padding: 0;
+  }
+
+  .hero{
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .brand-bar{
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 16px;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .brand,
+  .brand-emisor,
+  .brand-cliente{
+    justify-content: center;
+  }
+
+  .brand img{
+    max-width: 210px;
+    max-height: 72px;
+  }
+
+  .brand-cliente img{
+    max-width: 220px;
+    max-height: 62px;
+  }
+
+  .report-title{
+    font-size: .85rem;
+    letter-spacing: .12em;
+    white-space: normal;
+  }
+
+  .brand-bar::after{
+    display: none;
+  }
+
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 34px 22px 42px;
+  }
+
+  .hero-copy{
+    text-align: center;
+  }
+
+  .eyebrow{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-copy h1{
+    font-size: clamp(3rem, 14vw, 4.5rem);
+    line-height: .95;
+    margin: 20px 0;
+  }
+
+  .hero-subtitle{
+    font-size: 1.15rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .hero-meta{
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-meta span{
+    font-size: .9rem;
+    padding: 10px 16px;
+  }
+
+  .hero-panel{
+    width: 100%;
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .hero-stats{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .hero-stats article{
+    padding: 18px;
+  }
+}
