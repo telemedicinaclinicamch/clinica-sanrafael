@@ -648,7 +648,7 @@ svg {
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--success-soft), #f0faf4);
   border: 1px solid rgba(46, 157, 99, 0.18);
-  height: 100%;
+  height: 85%;
 }
 
 .executive-note strong {
