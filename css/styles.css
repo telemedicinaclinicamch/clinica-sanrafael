@@ -912,3 +912,80 @@ td:nth-child(5) {
   .report-body { padding: 24px 16px; }
   .section-block, .rules-section, .card-feature { padding: 24px 16px; }
   .report-footer { margin: 0 16px 24px; align-items: center; }
+  .download-section {
+  margin-top: 20px;
+}
+}
+/* ===========================
+   ANEXO DE SOPORTE
+=========================== */
+
+.annex-panel{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) auto;
+    gap:18px;
+    margin-top:20px;
+}
+
+.annex-stat{
+    padding:24px;
+    border-radius:18px;
+    background:linear-gradient(
+        180deg,
+        var(--white),
+        var(--mch-soft-2)
+    );
+    border:1px solid var(--mch-line);
+}
+
+.annex-stat strong{
+    display:block;
+    font-size:2rem;
+    font-weight:900;
+    color:var(--mch-primary);
+}
+
+.annex-stat span{
+    color:var(--mch-muted);
+}
+
+.annex-download{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:220px;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        var(--mch-primary),
+        var(--mch-primary-dark)
+    );
+
+    color:#fff !important;
+    text-decoration:none;
+    font-weight:800;
+
+    box-shadow:0 15px 30px rgba(143,47,147,.20);
+
+    transition:.25s;
+}
+
+.annex-download:hover{
+    transform:translateY(-4px);
+    box-shadow:0 22px 40px rgba(143,47,147,.28);
+}
+
+@media(max-width:900px){
+
+    .annex-panel{
+        grid-template-columns:1fr;
+    }
+
+    .annex-download{
+        min-height:60px;
+    }
+
+}
